@@ -7,3 +7,177 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// --- Custom UI enhancements -------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --brand-gradient-start: #1d7bff;
+  --brand-gradient-end: #7f5af0;
+  --brand-surface: #f7f9fc;
+  --brand-card: #ffffff;
+  --brand-text: #1f2d3d;
+  --brand-muted: #5b6472;
+  --brand-border: #e6e8ee;
+  --brand-highlight: #ffb347;
+}
+
+body {
+  font-family: 'Noto Sans TC', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  background: radial-gradient(circle at 20% 20%, #f0f5ff 0, #f7f9fc 38%, #f7f9fc 100%);
+  color: var(--brand-text);
+  line-height: 1.75;
+}
+
+a {
+  color: var(--brand-gradient-start);
+  transition: color 0.18s ease, box-shadow 0.18s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--brand-gradient-end);
+  box-shadow: 0 10px 30px rgba(30, 64, 175, 0.1);
+}
+
+.masthead {
+  background: linear-gradient(120deg, var(--brand-gradient-start), var(--brand-gradient-end));
+  color: #fff;
+  box-shadow: 0 12px 40px rgba(52, 65, 150, 0.25);
+}
+
+.masthead__inner-wrap {
+  padding: 0.65rem 1.25rem;
+}
+
+.masthead__menu-item a {
+  color: #fff !important;
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.masthead__menu-item a:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.page__hero--overlay {
+  background: linear-gradient(135deg, rgba(29, 123, 255, 0.14), rgba(127, 90, 240, 0.14));
+  border-radius: 18px;
+  padding: 2.2rem 2.6rem;
+  box-shadow: 0 14px 45px rgba(17, 24, 39, 0.12);
+}
+
+.page__title {
+  font-family: 'Space Grotesk', 'Noto Sans TC', 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.page__content h2,
+.page__content h3,
+.page__content h4 {
+  font-family: 'Space Grotesk', 'Noto Sans TC', 'Inter', sans-serif;
+  font-weight: 700;
+  color: #1e266d;
+}
+
+.page__content {
+  background: var(--brand-card);
+  border-radius: 18px;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid var(--brand-border);
+  box-shadow: 0 18px 50px rgba(17, 24, 39, 0.08);
+}
+
+.page__content p,
+.archive__item-excerpt {
+  color: var(--brand-muted);
+}
+
+.page__content blockquote {
+  border-left: 4px solid var(--brand-gradient-start);
+  background: #f1f5ff;
+  color: #1f2d3d;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+}
+
+.archive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.15rem;
+}
+
+.list__item {
+  list-style: none;
+}
+
+.archive__item {
+  background: var(--brand-card);
+  border: 1px solid var(--brand-border);
+  border-radius: 16px;
+  padding: 1.1rem 1.2rem;
+  box-shadow: 0 12px 35px rgba(17, 24, 39, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.archive__item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(29, 123, 255, 0.35);
+  box-shadow: 0 18px 45px rgba(17, 24, 39, 0.12);
+}
+
+.archive__item-title {
+  font-weight: 700;
+  color: #1e266d;
+}
+
+.archive__item-teaser img {
+  border-radius: 12px;
+}
+
+.page__footer {
+  background: #0f172a;
+  color: #e5e7eb;
+  border-top: none;
+  box-shadow: 0 -10px 30px rgba(15, 23, 42, 0.3);
+}
+
+.page__footer a {
+  color: #c7d2fe;
+}
+
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background: linear-gradient(120deg, var(--brand-gradient-start), var(--brand-gradient-end));
+  border: none;
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(30, 64, 175, 0.25);
+  border-radius: 12px;
+  padding: 0.75rem 1.1rem;
+}
+
+.notice--primary,
+.notice--info {
+  background: linear-gradient(135deg, rgba(29, 123, 255, 0.1), rgba(127, 90, 240, 0.08));
+  border-color: rgba(29, 123, 255, 0.38);
+}
+
+code,
+pre {
+  border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+  .masthead__menu-item a {
+    padding: 0.3rem 0.55rem;
+  }
+
+  .page__hero--overlay {
+    padding: 1.5rem 1.6rem;
+  }
+}
