@@ -8,7 +8,7 @@ luo-jing:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:"
+      url: "mailto:chingloai@gmail.com"
     - label: "研究工具"
       icon: "fas fa-fw fa-flask"
       url: "https://www.tatf.org.tw/"
