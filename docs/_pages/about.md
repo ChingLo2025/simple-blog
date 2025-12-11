@@ -24,6 +24,3 @@ LC‑MS、GC‑MS、PyGCMS、FTIR、NMR、HPLC、SEM/EDS、ICP-OES 等分析與�
 
 ## 合作與諮詢
 若想了解材料開發、逆向工程或質譜分析的合作機會，歡迎透過頁面上的聯絡方式取得聯繫。
-
-## 聯絡方式
-- Email：<a href="mailto:chingloai@gmail.com">chingloai@gmail.com</a>
