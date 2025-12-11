@@ -6,35 +6,33 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
   actions:
-    - label: "<i class='fas fa-user'></i> 認識羅靖"
-      url: "/about/"
-    - label: "<i class='fas fa-book-open'></i> 瀏覽最新文章"
-      url: "/year-archive/"
+    - label: "<i class='fas fa-download'></i> Install now"
+      url: "/docs/quick-start-guide/"
 excerpt: >
-  專注於材料研發、逆向工程與質譜分析的實戰筆記，分享羅靖在台光電子的經驗、工具與最佳實務。<br />
-  <small>以專案管理視角，串聯教育訓練、流程優化與 AI 助力的研發方法。</small>
+  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
+  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.3">Latest release v4.27.3</a></small>
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png
     alt: "customizable"
-    title: "材料研發與逆向工程"
-    excerpt: "涵蓋 PCB 材料配方解析、競品拆解到 SOP 制定，整合 GC-MS、FTIR、NMR 等工具的跨領域實務。"
-    url: "/about/"
+    title: "Super customizable"
+    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
+    url: "/docs/configuration/"
     btn_class: "btn--primary"
-    btn_label: "了解專長"
+    btn_label: "Learn more"
   - image_path: /assets/images/mm-responsive-feature.png
     alt: "fully responsive"
-    title: "質譜與分析方法"
-    excerpt: "LC-MS、GC-MS、PyGCMS、FTIR、ICP-OES 等儀器操作心得，包含方法驗證、數據解讀與問題排除。"
-    url: "/category/analysis/"
+    title: "Responsive layouts"
+    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
+    url: "/docs/layouts/"
     btn_class: "btn--primary"
-    btn_label: "閱讀分析筆記"
+    btn_label: "Learn more"
   - image_path: /assets/images/mm-free-feature.png
     alt: "100% free"
-    title: "AI 與專案管理"
-    excerpt: "分享將 AI 導入研發流程、數據判讀與專案管理工作流的經驗，提升團隊效率與決策品質。"
-    url: "/tag/ai/"
+    title: "100% free"
+    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
+    url: "/docs/license/"
     btn_class: "btn--primary"
-    btn_label: "查看 AI 案例"
+    btn_label: "Learn more"      
 ---
 
 {% include feature_row %}
