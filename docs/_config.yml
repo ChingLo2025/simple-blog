@@ -102,19 +102,12 @@ author:
   avatar           :
   bio              : "材料研發、逆向工程與質譜分析實務分享。"
   location         : "台灣"
-  email            : "chingloai@gmail.com"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:chingloai@gmail.com"
+  links: []
 
 
 # Site Footer
 footer:
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:chingloai@gmail.com"
+  links: []
   since: "2024"
 
 
