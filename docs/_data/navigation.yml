@@ -20,15 +20,13 @@ foo:
 
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
-  - title: "About"
+  - title: "關於羅靖"
     url: /about/
-  - title: "Sample Posts"
+  - title: "文章彙整"
     url: /year-archive/
-  - title: "Sample Collections"
+  - title: "研究筆記"
     url: /collection-archive/
-  - title: "Terms &amp; Privacy Policy"
+  - title: "聯絡與條款"
     url: /terms/
 
 
