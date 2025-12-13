@@ -131,3 +131,44 @@ pre {
 .greedy-nav .visible-links a:hover {
   color: #b6e6ff;
 }
+
+.food-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+  align-items: stretch;
+}
+
+.food-gallery__item {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.food-gallery__item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.food-gallery__item:hover img {
+  transform: scale(1.02);
+  opacity: 0.92;
+}
+
+.food-gallery__caption {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-weight: 700;
+  color: #f8fafc;
+  letter-spacing: 0.02em;
+}
+
+.food-gallery + .notice--warning {
+  margin-top: 1rem;
+}
