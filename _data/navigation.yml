@@ -6,5 +6,7 @@ main:
     url: /about/
   - title: "文章分類"
     url: /categories/
+  - title: "美食相簿"
+    url: /food-gallery/
   - title: "標籤"
     url: /tags/
