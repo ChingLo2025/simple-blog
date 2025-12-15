@@ -8,13 +8,13 @@ classes: wide
 
 歡迎光臨我的專屬美食相簿！
 
-{% assign food_photos = site.static_files | where_exp: "file", "file.path contains '/assets/images/'" | sort: 'name' %}
+{% assign food_photos = site.static_files | where_exp: "file", "file.relative_path contains '/assets/images/'" | sort: 'name' %}
 
 <div class="food-gallery">
   {% for photo in food_photos %}
   <figure class="food-gallery__item">
-    <a href="{{ photo.path | relative_url }}">
-      <img src="{{ photo.path | relative_url }}" alt="{{ photo.name | split: '.' | first | replace: '-', ' ' | replace: '_', ' ' }}">
+    <a href="{{ photo.relative_path | relative_url }}">
+      <img src="{{ photo.relative_path | relative_url }}" alt="{{ photo.name | split: '.' | first | replace: '-', ' ' | replace: '_', ' ' }}">
     </a>
   </figure>
   {% endfor %}
