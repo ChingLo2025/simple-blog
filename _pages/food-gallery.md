@@ -13,8 +13,8 @@ classes: wide
 <div class="food-gallery">
   {% for photo in food_photos %}
   <figure class="food-gallery__item">
-    <a href="{{ photo.path | relative_url }}">
-      <img src="{{ photo.path | relative_url }}" alt="{{ photo.name | split: '.' | first | replace: '-', ' ' | replace: '_', ' ' }}">
+    <a href="{{ photo.relative_path | relative_url }}">
+      <img src="{{ photo.relative_path | relative_url }}" alt="{{ photo.name | split: '.' | first | replace: '-', ' ' | replace: '_', ' ' }}">
     </a>
   </figure>
   {% endfor %}
