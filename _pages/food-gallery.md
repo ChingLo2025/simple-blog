@@ -8,7 +8,10 @@ classes: wide
 
 歡迎光臨我的專屬美食相簿！
 
-{% assign food_photos = site.static_files | where_exp: "file", "file.path contains '/assets/images/'" | sort: 'name' %}
+{% assign food_photos = site.static_files
+  | where_exp: "file", "file.relative_path contains 'assets/images/'"
+  | where_exp: "file", "file.extname != ''"
+  | sort: 'name' %}
 
 <div class="food-gallery">
   {% for photo in food_photos %}
