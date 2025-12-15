@@ -11,22 +11,23 @@ author_profile: true
   <div class="grid__item">
     <figure>
       <a href="{{ site.baseurl }}/assets/images/food/20230930.jpg">
-       <img src="{{ site.baseurl }}/assets/images/food/20230930.jpg"
-        alt="2023-09-30 美食紀錄"
-        loading="lazy" />
+        <img src="{{ site.baseurl }}/assets/images/food/20230930.jpg"
+             alt="2023-09-30 美食紀錄"
+             loading="lazy" />
       </a>
-
       <figcaption>2023-09-30 美食紀錄</figcaption>
     </figure>
   </div>
+
   <div class="grid__item">
     <figure>
-      <a href="{{ site.baseurl }}/assets/images/food/20240705.jpg"">
-       <img src="{{ site.baseurl }}/assets/images/food/20240705.jpg"
-       alt="2024-07-05 美食紀錄"
-       loading="lazy" />
+      <a href="{{ site.baseurl }}/assets/images/food/20240705.jpg">
+        <img src="{{ site.baseurl }}/assets/images/food/20240705.jpg"
+             alt="2024-07-05 美食紀錄"
+             loading="lazy" />
       </a>
       <figcaption>2024-07-05 美食紀錄</figcaption>
     </figure>
   </div>
 </div>
+
